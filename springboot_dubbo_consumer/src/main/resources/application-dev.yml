@@ -1,0 +1,13 @@
+#Dubbo
+dubbo:
+  application:
+    name: springdubbo
+  registry:
+    address: zookeeper://192.168.1.130:2181
+    check: false
+  protocol:
+    name: dubbo
+  reference:
+    check: false
+    scan:
+      basePackages: com.axing.springboot_dubbo_provider.RPCService

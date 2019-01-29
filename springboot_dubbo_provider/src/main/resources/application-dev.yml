@@ -1,0 +1,14 @@
+#Dubbo
+dubbo:
+  application:
+    name: springdubboServer
+  registry:
+    address: zookeeper://192.168.1.130:2181
+    check: false
+  protocol:
+    name: dubbo
+    port: 20880
+  reference:
+    check: false
+  provider:
+    timeout: 1000
